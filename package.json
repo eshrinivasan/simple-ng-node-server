@@ -1,0 +1,14 @@
+{
+  "name": "simple-ng-node-server",
+  "version": "1.0.0",
+  "description": "simple node server with angular front end",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
