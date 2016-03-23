@@ -22,7 +22,7 @@ module.exports = function (grunt) {
         jshint: {
             all: [
                 'public/**/*.js',
-                '!public/**/*.gen.js',
+                '!public/angularapp.js',
                 '!public/**/vendor/*.js'
             ]
         }

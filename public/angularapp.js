@@ -35,6 +35,7 @@ demoapp.controller('DemoController', function( $scope, $window, $state )
 		$scope.currentIndex = -1;
 		$scope.maxIndex = $scope.tabs.length;
 		$scope.left = false;
+		$scope.time = new Date();
 
 		next();
 
@@ -49,23 +50,28 @@ demoapp.controller('DemoController', function( $scope, $window, $state )
 		{
 			$scope.transition = 'slide-left';
 			next();
-		}
+		};
 
 		$scope.right = function()
 		{
 			$scope.transition = 'slide-right';
 			next();
-		}
+		};
 
 		$scope.top = function()
 		{
 			$scope.transition = 'slide-top';
 			next();
-		}
+		};
 
 		$scope.bottom = function()
 		{
 			$scope.transition = 'slide-bottom';
 			next();
-		}
+		};
+});
+demoapp.directive('timeIndia', function() {
+  return {
+    template: "<div>Time in India right now is {{time | date:'medium':'+0530'}}</div>"
+  };
 });
